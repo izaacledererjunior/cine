@@ -1,0 +1,74 @@
+:root {
+  --color-primary: #6A0DAD;
+  --color-secondary: #D8BFD8;
+  --color-accent: #FFA500;
+  --color-background: #F2F2F2;
+  --color-text: #000000;
+  --color-text-secondary: #4A4A4A;
+  --color-white: #FFFFFF;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+  transform: scale(1.05);
+}
+
+.history-page {
+  background: var(--color-background);
+  padding: 20px;
+}
+
+.kanban-board {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.kanban-board .kanban-card {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border-radius: 6px;
+  padding: 10px;
+  color: var(--color-white);
+  transition: transform 0.3s ease-in-out;
+}
+
+.kanban-board .kanban-card:hover {
+  transform: scale(1.05);
+}
+
+.history-table {
+  background: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.history-table thead {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.history-table tbody tr {
+  transition: background 0.3s;
+}
+
+.history-table tbody tr:hover {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
